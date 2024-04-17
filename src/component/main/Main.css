@@ -1,0 +1,38 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1415px;
+    margin:  0 auto;
+    padding: 0 20px;
+}
+
+.shop_box_card {
+    width: 448px;
+    /* height: 330px; */
+    background: #f4f4f4;
+    color: black;
+}
+
+.shop_box_card_img img {
+    width: 200px;
+}
+
+.shop_btn_1 {
+    background: rgb(48, 103, 222);
+    border: none;
+    color: white;
+    padding: 3px 7px;
+    border-radius: 35%;
+    margin-right: 250px;
+    margin-top: 30px;
+}
+
+.shop_box_card h3 {
+    max-width: 350px;
+}
