@@ -111,6 +111,7 @@ const Main = () => {
     let text = "Mobile & Computing"
     let link = wrapper?.map((e, w) => (
         <div key={w}> 
+            
             <h3>{e.phone}</h3>
         </div>
     ))
@@ -146,9 +147,13 @@ const Main = () => {
                     url = {S24}
 
                 />
-                <Banner
-                   url = {Home}
+
+                <Benner title = {text}
+                    links = {link}
+                    url = {Home}
+
                 />
+               
     </main>
   )
 }
