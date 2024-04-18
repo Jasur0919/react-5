@@ -1,11 +1,15 @@
 import React from 'react'
 import './Main.css'
+import Benner from "../banner/Banner"
 import Shop1 from '../../assents/images/shop-1-removebg-preview.png'
 import Shop2 from '../../assents/images/shop-2-removebg-preview.png'
 import Shop3 from '../../assents/images/shop-3-removebg-preview.png'
 import Shop4 from '../../assents/images/shop-4-removebg-preview.png'
 import Shop5 from '../../assents/images/shop-5-removebg-preview.png'
 import Shop6 from '../../assents/images/shop-6-removebg-preview.png'
+import S24 from "../../assents/images/S24.avif"
+import Home from "../../assents/images/Home.avif"
+import Banner from '../banner/Banner'
 
 const data = [
     {   
@@ -58,6 +62,25 @@ const data = [
     }
 ]
 
+const wrapper = [
+    {
+        phone: "Galaxy S24 Ultra"
+    },
+    {
+        phone: "Galaxy S24+"
+    },
+    {
+        phone: "Galaxy Book4 Ultra"
+    },
+    {
+        phone: "Galaxy Tab S9 Series"
+    },
+    {
+        phone: "Galaxy Watch6 Series"
+    }
+  
+]
+
 const Main = () => {
 
     let product = data?.map((e) => (
@@ -85,6 +108,13 @@ const Main = () => {
     )
     )
 
+    let text = "Mobile & Computing"
+    let link = wrapper?.map((e, w) => (
+        <div key={w}> 
+            <h3>{e.phone}</h3>
+        </div>
+    ))
+
   return (
     <main>
       <section className="shop">
@@ -110,6 +140,15 @@ const Main = () => {
         </div>
       </section>
 
+
+                <Benner title = {text}
+                    links = {link}
+                    url = {S24}
+
+                />
+                <Banner
+                   url = {Home}
+                />
     </main>
   )
 }
